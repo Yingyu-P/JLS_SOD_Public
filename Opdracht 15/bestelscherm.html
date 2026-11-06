@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bestelscherm - Ruilkast Kledingruil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="winkelnaam">Ruilkast Kledingruil</h1>
+    <p class="instructie">Nieuw lid? Vul eerst je gegevens in en kies daarna de kleding die je wilt ruilen.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Nieuwe leden</h2>
+      <form action="#" method="post">
+        <div class="veld">
+          <label for="voornaam">Voornaam</label>
+          <input type="text" id="voornaam" name="voornaam" required>
+        </div>
+        <div class="veld">
+          <label for="achternaam">Achternaam</label>
+          <input type="text" id="achternaam" name="achternaam" required>
+        </div>
+        <div class="veld">
+          <label for="email">E-mailadres</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="veld">
+          <label for="lidnummer">Lidmaatschapsnummer</label>
+          <input type="text" id="lidnummer" name="lidnummer" required>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <h2>Kleding kiezen</h2>
+      <p class="tip">Tip: elk kledingstuk is een unieke ruil, dus wie het eerst komt, die het eerst maalt.</p>
+
+      <div class="kaarten">
+
+        <article class="kaart">
+          <h3>Winterjas</h3>
+          <p>Donkerblauwe gewatteerde jas, maat M, nog in goede staat.</p>
+          <label><input type="checkbox" name="kleding" value="jas"> Bestel deze jas</label>
+        </article>
+
+        <article class="kaart">
+          <h3>Wollen trui</h3>
+          <p>Gebreide groene trui met ronde hals, maat L, lekker warm.</p>
+          <label><input type="checkbox" name="kleding" value="trui"> Bestel deze trui</label>
+        </article>
+
+        <article class="kaart">
+          <h3>Spijkerbroek</h3>
+          <p>Rechte blauwe jeans, maat 32/32, nauwelijks gedragen.</p>
+          <label><input type="checkbox" name="kleding" value="broek"> Bestel deze broek</label>
+        </article>
+
+      </div>
+
+      <button type="submit" class="bestelknop">Bestelling plaatsen</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:info@kleding.nl">info@kleding.nl</a> · Tel. 010-1234567</p>
+    <p>Open: woensdag t/m zaterdag, 10:00-17:00 uur</p>
+  </footer>
+
+</body>
+</html>
