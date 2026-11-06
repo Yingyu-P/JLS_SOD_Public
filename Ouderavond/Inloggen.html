@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouderavond</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ouderavond</h1>
+
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="BSA.html">BSA</a>
+            <a href="Examenplan.html">Examenplan</a>
+            <a href="OverMij.html">Over mij</a>
+
+            <div class="submenu">
+                <a href="#">Meer ▼</a>
+
+                <div class="submenu-items">
+                    <a href="Inloggen.html">Inloggen</a>
+                    <a href="Locatie.html">Locatie/Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="inlogformulier">
+            <h2>Inloggen</h2>
+            <p>Log in om verder te gaan.</p>
+
+            <section>
+                <form>
+                    <label for="Firstname">Voornaam:</label>
+                    <br>
+                    <input type="text" name="Firstname" placeholder="Voornaam" required pattern="[a-zA-ZÀ-ÿ]+">
+
+                    <br><br>
+
+                    <label for="Mname">Tussenvoegsel:</label>
+                    <br>
+                    <input type="text" name="Mname" placeholder="Tussenvoegsel" pattern="[a-zA-ZÀ-ÿ]+">
+
+                    <br><br>
+
+                    <label for="Lastname">Achternaam:</label>
+                    <br>
+                    <input type="text" name="Lastname" placeholder="Achternaam" required pattern="[a-zA-ZÀ-ÿ]+">
+
+                    <br><br>
+
+                    <label for="email">E-mailadres:</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Vul je e-mailadres in" required>
+
+                    <br><br>
+
+                    <label for="wachtwoord">Wachtwoord:</label>
+                    <br>
+                    <input type="password" id="wachtwoord" name="wachtwoord" placeholder="Vul je wachtwoord in" required>
+
+                    <br><br>
+
+                    <label for="bericht">Bericht of vraag:</label>
+                    <br>
+                    <input type="text" id="Text" name="Text" placeholder="Typ hier je bericht/vraag in" required>
+
+                    <br><br>
+
+                    <input type="checkbox" id="akkoord" name="akkoord" required>
+                    <label for="akkoord">Ik ga akkoord met de voorwaarden.</label>
+
+                    <br><br>
+
+                    <button type="submit">Inloggen</button>
+                </form>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Inloggen - Welkom!</p>
+    </footer>
+
+</body>
+</html>

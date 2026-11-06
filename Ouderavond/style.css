@@ -1,0 +1,299 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f8f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #198754;
+    color: white;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+header h1 {
+    margin: 0;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #23b872;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #198754;
+    min-width: 160px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 100;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.submenu-items a {
+    display: block;
+    padding: 12px 20px;
+}
+
+.submenu-items a:hover {
+    background-color: #146c43;
+}
+
+.submenu:hover .submenu-items {
+    display: block;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    flex: 1;
+}
+
+section, .blok {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+h2, h3 {
+    color: #198754;
+}
+
+img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 3px 10px gray;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #198754;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    display: inline;
+}
+
+label[for="akkoord"] {
+    display: inline;
+    font-weight: normal;
+}
+
+button {
+    background-color: #198754;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #146c43;
+}
+
+.knop {
+    display: inline-block;
+    background-color: #198754;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.knop:hover {
+    background-color: #146c43;
+}
+
+footer {
+    background-color: #145c36;
+    color: white;
+    text-align: center;
+    padding: 5px 100px;
+    margin-top: auto;
+}
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    img {
+        max-width: 45%;
+        height: auto;
+    }
+
+    section, .blok {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .submenu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .submenu-items {
+        position: static;
+        width: 100%;
+    }
+
+    .submenu:hover .submenu-items,
+    .submenu:focus-within .submenu-items {
+        display: block;
+    }
+
+    main {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    section, .blok {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
