@@ -1,0 +1,116 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #100e18;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    min-height: 33vh;
+    box-sizing: border-box;
+    padding: 65px 10px;
+    text-align: center;
+    background-image: linear-gradient(rgba(10, 5, 20, 0.4), rgba(10, 5, 20, 0.7)), url("https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #d0b5ff;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav {
+    background-color: #211832;
+    padding: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c6a9ff;
+}
+
+main {
+    min-height: 100vh;
+    padding: 25px 10px;
+    background-image: linear-gradient(rgba(16, 14, 24, 0.85), rgba(16, 14, 24, 0.9)), url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h2 {
+    max-width: 800px;
+    margin: 35px auto 15px;
+    color: #d0b5ff;
+    text-align: center;
+}
+
+.vak {
+    width: 80%;
+    max-width: 800px;
+    box-sizing: border-box;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: rgba(33, 24, 50, 0.95);
+    border: 2px solid #7652a8;
+    border-left: 8px solid #c6a9ff;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.vak img {
+    width: 50vw;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.vak p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #211832;
+    color: #c6a9ff;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .vak {
+        width: 95%;
+    }
+}
