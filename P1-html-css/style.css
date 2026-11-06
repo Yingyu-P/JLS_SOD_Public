@@ -1,0 +1,21 @@
+.Blokken, .Reverse {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 40px auto;
+    justify-content: space-between;
+}
+
+.Reverse {
+    flex-direction: row-reverse;
+}
+
+.Blok {
+    width: 200px;
+    height: 200px;
+}
+
+.Blauw { background-color: blue; }
+.Zwart { background-color: black; }
+.Rood  { background-color: red; }
+.Groen { background-color: green; }
