@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUI vakantie boeking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="TUIlogo.png" alt="TUI-logo">
+    <form>
+<br>
+<h1>
+    Boek nu u jouw vakantie!
+</h1>
+<br>
+<table id="Personal information">
+
+<tr>
+<td id="Gegevens">
+<label for="Firstname">Voornaam:</label>
+</td>
+<td>
+    <input type="text" name="Firstname" placeholder="Oscar" required pattern="[a-zA-ZÀ-ÿ]+">
+    <span class="required"></span>
+</td>
+</tr>
+
+<tr>
+<td>
+    <label for="Mname">Tussenvoegsel:</label>
+</td>
+<td>
+    <input type="text" name="Mname" pattern="[a-zA-ZÀ-ÿ]+">
+</td>
+</tr>
+
+<tr>
+<td>
+    <label for="Lastname">Achternaam:</label>
+</td>
+<td>
+    <input type="text" name="Lastname" placeholder="Bak" required pattern="[a-zA-ZÀ-ÿ]+">
+    <span class="required"></span>
+</td>
+</tr>
+
+<tr>
+    <td>
+        <label for="BSN">BSN nummer:</label>
+    </td>
+    <td>
+        <input type="text" name="BSN" placeholder="123456789" required pattern="[0-9]{1,9}" maxlength="9">
+        <span class="required"></span>
+    </td>
+</tr>
+</table>
+
+<table id="GenderSelction">
+    <tr>
+        <td>
+<label for="Male" class="Radio">Man</label>
+        </td>
+        <td>
+            <input type="radio" name="Gender" value="M" id="Male" checked>
+        </td>
+        <td>
+<label for="Female" class="Radio">Vrouw</label>
+        </td>
+        <td>
+            <input type="radio" name="Gender" value="F" id="Female">
+        </td>
+        <td>
+<label for="Other" class="Radio">Anders</label>
+        </td>
+        <td>
+            <input type="radio" name="Gender" value="O" id="Other">
+        </td>
+</tr>
+</table>
+<br>
+
+<table id="Adress">
+<tr>
+<td>
+    <label for="Straat">Straat + Huisnummer:</label>
+</td>
+<td>
+    <input type="text" name="Straat" placeholder="Montestoriesweg" required pattern="[a-zA-ZÀ-ÿ ]+">
+    <input type="text" name="Huisnummer" placeholder="123A" required pattern="[A-Z0-9]+" id="StrtNumber">
+    <span class="required"></span>
+</td>
+</tr>
+<tr>
+<td>
+<label for="City">Stad + Postcode:</label>
+</td>
+<td>
+<input type="text" name="City" placeholder="Amsterdam" required pattern="[a-zA-Z]+" id="City">
+<input type="text" name="Postcode" placeholder="1234AB" required pattern="[0-9]{4}[A-Z]{2}" id="Postcode">
+<span class="required"></span>
+</td>
+</tr>
+<tr>
+<td>
+<label for="Country">Land:</label>
+</td>
+<td>
+    <select name="Country" id="Country">
+    <option value="NLD">Nederland</option>
+    <option value="BEL">Belgie</option>
+    </select>
+    <span class="required"></span>
+</td>
+</tr>
+</table>
+<br>
+<table id="VacationSelection">
+<tr>
+<td>
+<label for="Country" id="VacationCountry">Vakantie Land: </label>
+</td>
+<td>
+<select name="Country" >
+    <option value="BEL">Belgie</option>
+   <option value="ESP">Spanje</option>
+   <option value="DEU">Duitsland</option>
+   <option value="ENG">Engeland</option>
+   <option value="FRA">Frankrijk</option>
+</select>
+</td>
+</tr>
+    <tr>
+    <td>
+        <label for="VacationMonth">Vakantiemaand:</label>
+    </td>
+    <td>
+        <input type="month" name="VacationMonth" id="VacationMonth" required>
+    </td>
+</tr>
+<tr>
+<td>
+<Label for="StartDate">Vertrek Datum: </label>
+</td>
+<td>
+<input type="Date" id="Startdate" name="StartDate" min="2026-09-26" required>
+<span class="Required"></span>
+</td>
+</tr>
+<tr>
+<td>
+<Label for="EndDate">Terugkomst Datum: </Label>
+</td>
+<td>
+<input type="date" id="EndDate" name= "EndDate" min="2026-09-27" required>
+<span class="Required"></span>
+</td>
+</tr>
+<tr>
+<td>
+<label for="Travellers">Aantal mede-reizegers: </label>
+</td>
+<td>
+<select name="Travellers" required>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+</td>
+</tr>
+</table>
+<br>
+<table id="CreateAccount">
+    <h2>Maak een account aan om te boeken!</h2>
+<tr>
+    <td>
+<label for="Email">E-mail: </label>
+</td>
+<td>
+    <input type="email" name="Email" placeholder="email@gmail.com" required>
+</td>
+</tr>
+<tr>
+    <td>
+        <label for="Password">Wachtwoord: </label>
+    </td>
+    <td>
+        <input type="password" name="Password" placeholder="************" required>
+    </td>
+</tr>
+</table>
+<br>
+<table id="Submit">
+<tr>
+    <td>
+        <input type="Submit" name="Nu boeken!" id="Submit">
+    </td>
+</tr>
+</table>
+<br>
+    </form>
+</body>
+</html>

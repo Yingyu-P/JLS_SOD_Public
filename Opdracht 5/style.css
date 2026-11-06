@@ -1,0 +1,54 @@
+body {
+    background-color: #e6f7ff;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+img {
+    width: 150px;
+}
+
+form {
+    background-color: white;
+    width: 600px;
+    margin: 10px auto;
+    padding: 15px;
+    border: 2px solid #00a8e0;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #00a8e0;
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="month"],
+select {
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #ffcc00;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
