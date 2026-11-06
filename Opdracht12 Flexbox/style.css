@@ -1,0 +1,34 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(136, 223, 129);
+    padding: 20px;
+}
+
+.logo {
+    width: 25%;
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.login {
+    width: 25%;
+    text-align: right;
+}
+
+a {
+    color: rgb(241, 62, 62);
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
