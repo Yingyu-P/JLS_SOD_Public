@@ -138,6 +138,10 @@ form label {
     font-weight: bold;
 }
 
+.Firstname,.Mname,.Lastname{
+    color: #43e48e;
+}
+
 input, select, textarea {
     width: 100%;
     padding: 12px;
