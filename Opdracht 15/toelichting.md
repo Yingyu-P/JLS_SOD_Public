@@ -12,7 +12,7 @@
 
 **Vuistregel:** id = één uniek element; class = onderdeel dat herhaald wordt.
 
-## 2. Het boxmodel (met kaart "Winterjas" als voorbeeld)
+## 2. Het boxmodel
 
 Elk element is een doos met vier lagen, van binnen naar buiten:
 
@@ -26,8 +26,6 @@ Dus: padding zit **binnen** de rand, margin **buiten** de rand.
 ## 3. Font-eigenschappen en text-eigenschappen
 
 De winkelnaam en de kopjes zijn vetgedrukt met `font-weight: 700`. De instructie en de tip zijn cursief met `font-style: italic`. Dit zijn font-eigenschappen: ze bepalen hoe het lettertype eruitziet. Een text-eigenschap zoals `text-align` bepaalt juist hoe de tekst in de ruimte wordt geplaatst (uitlijning).
-
-## 4. Waarom externe CSS in plaats van inline styles?
 
 - **Scheiding van HTML en styling:** de HTML beschrijft alleen structuur en inhoud, de CSS het uiterlijk. Zo blijft de code leesbaar en kan ik het uiterlijk aanpassen zonder de HTML aan te raken.
 - **Herbruikbaarheid:** één regel voor `.kaart` geldt voor alle kaarten. Voegt de winkel later een nieuwe jas, rok of sjaal toe, dan kopieer je alleen een `<article class="kaart">` en heeft die direct dezelfde opmaak.
